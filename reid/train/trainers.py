@@ -592,7 +592,7 @@ class MULJOINT_MAN_Trainer(BaseTrainer):
 
         loss_global, prec_global = self.criterion(globalscores, tar_probe, tar_gallery)
 
-        loss = loss_id + loss_global*50
+        loss = loss_id + loss_global*0.0
 
 
         return loss, precid, loss_global, prec_global
